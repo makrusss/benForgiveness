@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hi, Aen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        h1 {
+            color: #ff70b8;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        h2 {
+            color: #ff70b8;
+            font-size: 20px;
+        }
+        
+        p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        
+        .slideshow-container {
+            position: relative;
+            max-width: 40%;
+            margin: auto;
+        }
+        
+        .slideshow-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .slideshow-container .slide {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi Aen, I just wanna say : Iam Sorry and I love you </h1>
+    <p>On Mission : Love</p>
+    
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="asd.jpg" alt="Foto Cinta 1" width="500" height="600">
+        </div>
+        <div class="slide">
+            <img src="asd2.jpg" alt="Foto Cinta 2" width="500" height="300">
+        </div>
+        <div class="slide">
+            <img src="asd3.jpg" alt="Foto Cinta 3" width="500" height="300">
+        </div>
+    </div>
+    
+    <div>
+        <h2>Hopefully, you remember this</h2>
+        <audio controls>
+            <source src="lagu.mp4" type="audio/mpeg">
+            Maaf, browser Anda tidak mendukung pemutar musik.
+        </audio>
+    </div>
+    
+    <div>
+        <h2>I'm Sorry and I Love You</h2>
+    
+    <p>In the depths of my heart, I must confess,<br>
+    I'm sorry for the mistakes, causing distress.<br>
+    With every word and action, I caused you pain,<br>
+    But I hope forgiveness in your heart will remain.</p>
+    
+    <p>I apologize for the tears that you shed,<br>
+    For the sleepless nights, the sorrow I spread.<br>
+    My love for you is deeper than the sea,<br>
+    And I'm sorry for not always letting it be.</p>
+    
+    <p>In moments of anger, I lost my way,<br>
+    But my love for you grows stronger each day.<br>
+    I promise to cherish you like never before,<br>
+    To mend the wounds and heal the core.</p>
+    
+    <p>In the language of love, I express my plea,<br>
+    To forgive my faults and set my heart free.<br>
+    For amidst the flaws, my love shines true,<br>
+    I'm sorry, my love, and I will always love you.</p>
+
+    <script>
+        // JavaScript for slideshow
+        var slides = document.querySelectorAll('.slide');
+        var currentSlide = 0;
+
+        function showSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.display = 'block';
+        }
+
+        setInterval(showSlide, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>
